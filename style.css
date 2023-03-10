@@ -1,0 +1,1015 @@
+:root {
+    --red:#F23545;
+    --dark-blue:#034C8C;
+    --blue:#05AFF2;
+    --green:#34BF57;
+    --yellow: #F2CB05;
+    --white-trans: rgba(255, 255, 255, 0.7);
+    --wl: .07em;
+    --common-size: 1.12em;
+    --common-size-V: 3.2em;
+    --Y-cir-ratio: 1.1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+body { 
+    width: 100%;
+    background-color: #000;
+}
+
+.main_design {
+    display: flex;
+    width: 100wh;
+    height: 100vh;
+
+}
+/*------------- keyboard----------------- */
+.keyboard_container {
+   width: 20em;
+   position: absolute; 
+   right: 0; 
+   top: 1.5em;
+   
+}
+
+.box_ho_stroke_1{
+    position: absolute;
+    height: var(--wl);
+    width: 20em;
+    background-color: var(--white-trans);
+    top: 0;
+    left: -1em;
+}
+
+.box_ho_stroke_2{
+    position: absolute;
+    height: var(--wl);
+    width: 20em;
+    background-color: var(--white-trans);
+    top: 5.3em;
+    left: -2.5em;
+}
+
+.box_diag_stroke_1 {
+    position: absolute;
+    height: 8em;
+    width: var(--wl);
+    background-color: var(--white-trans);
+    transform: rotate(18deg);
+    top: -1.3em;
+    left: -.5em;
+}
+
+.box_diag_stroke_2 {
+    position: absolute;
+    height: 8em;
+    width: var(--wl);
+    background-color: var(--white-trans);
+    transform: rotate(18deg);
+    top: -1.3em;
+    left: 16.3em;
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.dark_blue {
+    background-color: var(--dark-blue);
+}
+.blue {
+    background-color: var(--blue);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.row {
+    display: inline-flex;
+    margin-top: .05em;
+   
+}
+
+.two {
+    margin-left: -.6em;
+}
+
+.three {
+    margin-left: -1.2em;
+}
+
+button {
+    margin: 0.05em 0.1em;
+    position: relative;
+    border: none;
+    padding: 0;
+    width: 1.5em;
+    height: 1.5em;
+    transform: skew(-20deg);
+    display: flex;
+}
+
+.letter {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: -.4em;
+    right: 0;
+    text-decoration: none !important;
+}
+
+
+
+button:active {
+    background-color: #fff;
+}
+
+/*---------------- keyboard----------------- */
+
+
+/* ------------- C BAUHAUS ----------------- */
+.C_bauhaus {
+    position: absolute;
+    display: flex;
+
+    top: 1.5em;
+    left: 2em;
+}
+
+.C_outer {
+    width: 4em;
+    height: 8em;
+    background-color: var(--red);
+    border-bottom-left-radius: 8em;
+    border-top-left-radius: 8em;
+
+    display: flex;
+    justify-content:left;
+    align-items: center;
+
+    
+}
+
+.C_inner {
+    width: 2.5em;
+    height: 5em;
+    background-color: var(--yellow);
+    border-bottom-left-radius: 5em;
+    border-top-left-radius: 5em;
+
+    position: relative;
+    left: 1.5em;
+    
+}
+
+/* ------------- C BAUHAUS ----------------- */
+
+/* ------------- O BAUHAUS ----------------- */
+
+.O_bauhaus {
+    position: absolute;
+    display: inline-flex;
+    top: 8em;
+    left: 6.5em;
+    transform: scale(1.1);
+}
+
+.O_liners {
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    
+} 
+
+.left_more {
+    position: absolute;
+    top: 10em;
+}
+
+.line_left_more {
+    background-color: var(--blue);
+    width: var(--wl);
+    height: 12em;
+    margin: .05em;
+}
+
+.line_left {
+    background-color: var(--blue);
+    width: var(--wl);
+    height: 10em;
+    margin: .05em;
+}
+
+.line_right {
+    background-color: var(--blue);
+    width: var(--wl);
+    height: 5em;
+    margin: .05em;
+}
+
+.line_top_left {
+    background-color: var(--blue);
+    width: var(--wl);
+    height: 3.5em;
+    margin: .05em;
+}
+
+.line_top_right {
+    background-color: var(--blue);
+    width: var(--wl);
+    height: 3.5em;
+    margin: .05em;
+}
+
+.line_bottom_right {
+    background-color: var(--blue);
+    width: var(--wl);
+    height: 3.5em;
+    margin: .05em;
+}
+
+.line_bottom_left {
+    background-color: var(--blue);
+    width: var(--wl);
+    height: 2em;
+    margin: .05em;
+}
+
+.left {
+    margin-right: 2em;
+}
+
+.right {
+    margin-left: 2em;
+}
+
+.top_left {
+    transform: rotate(66deg);
+    position: absolute;
+    left: 1.25em;
+    top: -1.99em;
+}
+
+.top_right {
+    transform: rotate(-66deg);
+    position: relative;
+    right: -.54em;
+    top: -3.9em;
+}
+
+.bottom_right {
+    transform: rotate(66deg);
+    position: relative;
+    right: 6.6em;
+    top: 1.5em;
+}
+
+.bottom_left {
+    transform: rotate(-66deg);
+    position: relative;
+    right: 3.25em;
+    top: 2.14em;
+}
+
+#O_hide {
+    height: 2em;
+    width: .75em;
+    background-color: #000;
+    position: absolute;
+    z-index: 2;
+    top: 4em;
+    left: 1.15em;
+}
+
+/* ------------- O BAUHAUS ----------------- */
+
+/* ------------- N left BAUHAUS ----------------- */
+.N_left_bauhaus {
+    display: flex;
+    position: absolute;
+    top: 18em;
+    left: 1.5em;
+}
+
+.left_outer {
+    width: 4.5em;
+    height: 5.5em;
+    background-color: var(--yellow);
+    clip-path: polygon(0 0, 100% 80%, 100% 100%, 0% 100%);
+}
+
+.left_inner {
+    width: 4.5em;
+    height: 5.5em;
+    background-color: var(--green);
+    clip-path: polygon(0 0, 25% 0%, 25% 100%, 0% 100%);
+}
+/* ------------- N left BAUHAUS ----------------- */
+
+/* ------------- N right BAUHAUS ----------------- */
+.N_right_bauhaus {
+    display: flex;
+    position: absolute;
+    top: 22.4em;
+    left: 7.3em;
+    transform: rotate(180deg);
+}
+
+.right_outer {
+    width: 4.5em;
+    height: 5.5em;
+    background-color: var(--yellow);
+    clip-path: polygon(0 0, 100% 80%, 100% 100%, 0% 100%);
+}
+
+.right_inner {
+    width: 4.5em;
+    height: 5.5em;
+    background-color: var(--green);
+    clip-path: polygon(0 0, 25% 0%, 25% 100%, 0% 100%);
+}
+/* ------------- N right BAUHAUS ----------------- */
+
+/* ------------- E BAUHAUS ----------------- */
+.E_bauhaus{
+    display: flex;
+    position: absolute;
+    top: 17em;
+    left: 10.68em;
+}
+.E_line{
+    position: relative;
+    width: var(--common-size);
+    height: 6em;
+    background-color: var(--green);
+}
+.E_top{
+    width: 7em;
+    height: var(--common-size);
+    background-color: var(--green);
+}
+.E_center{
+    position: relative;
+    width: 4em;
+    height: var(--common-size);
+    background-color: var(--green);
+    top: 2.78em;
+    left: -7em;
+}
+.E_bottom{
+    position: relative;
+    width: 2.5em;
+    height: var(--common-size);
+    background-color: var(--green);
+    top: 5.4em;
+    left: -11.1em;
+}
+/* ------------- E BAUHAUS ----------------- */
+
+/* ------------- C2 BAUHAUS ----------------- */
+.C2_bauhaus{
+    display: flex;
+    position: absolute;
+    top: 12em;
+    left: 14.15em;
+}
+.vert_line{
+
+    width: var(--common-size);
+    height: 4.5em;
+    background-color: var(--red);
+}
+.hori_line{
+    position: relative;
+    width: 3em;
+    height: var(--common-size);
+    background-color: var(--yellow);
+    left: .5em;
+}
+/* ------------- C2 BAUHAUS ----------------- */
+
+/* ------------- T BAUHAUS ----------------- */
+.T_bauhaus{
+    display: flex;
+    position: absolute;
+    top: 5.67em;
+    left: 15.45em;
+    /* justify-content: center;
+    align-items: center; */
+}
+.T_liners{
+    list-style: none;
+    display: block;
+    
+}
+
+.T_line{
+    height: var(--wl);
+    width: 7em;
+    background-color: var(--yellow);
+    margin: .1em;
+}
+.T_vert{
+    width: var(--common-size);
+    height: 5.5em;
+    background-color: var(--yellow);
+    position: relative;
+    top: 1.3em;
+    right: 5em;
+}
+/* ------------- T BAUHAUS ----------------- */
+
+/* ------------- I BAUHAUS ----------------- */
+.I_bauhaus{
+    display: flex;
+    position: absolute;
+    left: 22em;
+    top: 4.309em;
+   
+}
+
+.I_liners{
+    list-style: none;
+    display: block;
+    
+}
+
+.I_line{
+    height: var(--wl);
+    width: var(--common-size);
+    background-color: var(--yellow);
+    margin: .1em;
+}
+
+.I_cir {
+    width: var(--common-size);
+    height: var(--common-size);
+    background-color: var(--red);
+    border-radius: 50%;
+    position: relative;
+    top: -1.4em;
+    right: 1.2em;
+}
+/* ------------- I BAUHAUS ----------------- */
+
+/* ------------- V BAUHAUS ----------------- */
+.V_bauhaus{
+    display: block;
+    position: absolute;
+    top: 11.1em;
+    left: 22.1em;
+}
+.V_main{
+   
+    width: 0;
+    height: 0;
+    border-left: var(--common-size-V) solid transparent;
+    border-right: var(--common-size-V) solid transparent;
+    border-top: calc( var(--common-size-V) * 1.75) solid var(--dark-blue);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.V_inner{
+    width: 0;
+    height: 0;
+    border-left: calc( var(--common-size-V) / 1.6) solid transparent;
+    border-right: calc( var(--common-size-V) / 1.6) solid transparent;
+    border-top: calc( (calc( var(--common-size-V) * 1.75) / 1.6 ) ) solid var(--green);
+    
+    position: relative;
+    top: -3.85em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.V_in_inner{
+    width: 0;
+    height: 0;
+    border-left: calc( var(--common-size-V) / 4) solid transparent;
+    border-right: calc( var(--common-size-V) / 4) solid transparent;
+    border-top: calc( (calc( var(--common-size-V) * 1.75) / 4 ) ) solid var(--red);
+    
+    position: relative;
+    top: -2.79em;
+}
+/* ------------- V BAUHAUS ----------------- */
+
+/* ------------- I2 BAUHAUS ----------------- */
+.I2_bauhaus {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    top: 15.58em;
+    left: 25.65em;
+}
+
+.I2_top {
+    border-bottom: var(--common-size) solid var(--red);
+    border-left: .65em solid transparent;
+    border-right: 0em solid transparent;
+
+    height: 0;
+    width: 3.5em;
+    /*background-color: var(--red);*/
+
+    position: relative;
+
+}
+
+.I2_center {
+    width: var(--common-size);
+    height: 4em;
+    background-color: var(--blue);
+
+    margin: .3em;
+
+}
+
+.I2_bottom {
+    height: var(--common-size);
+    width: 3.7em;
+    background-color: var(--red);
+
+    position: relative;
+}
+/* ------------- I2 BAUHAUS ----------------- */
+
+/* ------------- T2 BAUHAUS ----------------- */
+.T2_bauhaus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+
+    top: 19em;
+    left: 28em;
+}
+
+.T2_top {
+    height: var(--common-size);
+    width: 8em;
+    background-color: var(--blue);
+}
+
+.T2_bottom {
+    width: 0;
+    height: 0;
+    border-left: 1.2em solid transparent;
+    border-right: 1.2em solid transparent;
+    border-top: 5.5em solid var(--blue);
+}
+/* ------------- T2 BAUHAUS ----------------- */
+
+/* ------------- Y BAUHAUS ----------------- */
+.Y_bauhaus{
+    display: inline-flex;
+    position: absolute;
+    top: 12.17em;
+    left: 33.497em;
+    
+}
+.Y_circle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.25em;
+}
+.Y_circle_top{
+    height: var(--Y-cir-ratio);
+    width: calc( var(--Y-cir-ratio) * 2);
+    border-top-left-radius: calc( var(--Y-cir-ratio) * 2);
+    border-top-right-radius: calc( var(--Y-cir-ratio) * 2);
+    background-color: var(--dark-blue);
+}
+.Y_circle_bottom{
+    height: var(--Y-cir-ratio);
+    width: calc( var(--Y-cir-ratio) * 2);
+    border-bottom-left-radius: calc( var(--Y-cir-ratio) * 2);
+    border-bottom-right-radius: calc( var(--Y-cir-ratio) * 2);
+    background-color: var(--green);
+}
+.Y_tri{
+    display: flex;
+}
+.Y_tri_outer{
+    background-color: var(--red);
+    width: 8em;
+    height: 8em;
+    clip-path: polygon(0 0, 60% 0, 60% 0, 0 100%);
+}
+.Y_tri_inner{
+    background-color: var(--blue);
+    width: 8em;
+    height: 8em;
+    clip-path: polygon(0 0, 16% 0, 16% 100%, 0 100%);
+}
+/* ------------- Y BAUHAUS ----------------- */
+
+/* --------------- white stroke ---------------- */
+
+.white_stroke{
+    z-index: 2;
+    display: flex;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+/* --------------- vertical stroke ---------------- */
+
+.stroke_1{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 1.5em;
+}
+
+.stroke_2{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 6em;
+}
+
+.stroke_2-5{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 10.7em;
+}
+
+.stroke_3{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 13em;
+}
+
+.stroke_4{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 14.1em;
+}
+
+.stroke_5{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 15.2em;
+}
+
+.stroke_6{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 15.7em;
+}
+
+.stroke_7{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 18.7em;
+}
+
+.stroke_8{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 22em;
+}
+
+.stroke_9{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 23.2em;
+}
+
+.stroke_10{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 27.2em;
+}
+
+.stroke_11{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 28.2em;
+}
+
+.stroke_12{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 29.7em;
+}
+
+.stroke_13{
+    position: absolute;
+    width: var(--wl);
+    height: 100vh;
+    background-color: var(--white-trans);
+    left: 36em;
+}
+
+/* --------------- vertical stroke ---------------- */
+
+/* --------------- horizontal stroke ---------------- */
+.ho_stroke_1{
+    position: absolute;
+    height: var(--wl);
+    width: 15vw;
+    background-color: var(--white-trans);
+    top: 4.3em;
+    left: 18em;
+}
+
+.ho_stroke_2{
+    position: absolute;
+    height: var(--wl);
+    width: 20vw;
+    background-color: var(--white-trans);
+    top: 5.7em;
+    left: 12em;
+}
+
+.ho_stroke_3{
+    position: absolute;
+    height: var(--wl);
+    width: 20vw;
+    background-color: var(--white-trans);
+    top: 6.8em;
+    left: 12em;
+}
+
+.ho_stroke_4{
+    position: absolute;
+    height: var(--wl);
+    width: 15vw;
+    background-color: var(--white-trans);
+    top: 11em;
+    left: 20em;
+}
+
+.ho_stroke_5{
+    position: absolute;
+    height: var(--wl);
+    width: 55vw;
+    background-color: var(--white-trans);
+    top: 12em;
+    left: 10em;
+}
+
+.ho_stroke_6{
+    position: absolute;
+    height: var(--wl);
+    width: 15vw;
+    background-color: var(--white-trans);
+    top: 13.1em;
+    left: 10em;
+}
+
+.ho_stroke_7{
+    position: absolute;
+    height: var(--wl);
+    width: 15vw;
+    background-color: var(--white-trans);
+    top: 16.5em;
+    left: 10em;
+}
+
+.ho_stroke_8{
+    position: absolute;
+    height: var(--wl);
+    width: 20vw;
+    background-color: var(--white-trans);
+    top: 17em;
+    left: 9em;
+}
+
+.ho_stroke_9{
+    position: absolute;
+    height: var(--wl);
+    width: 20vw;
+    background-color: var(--white-trans);
+    top: 18.1em;
+    left: 9em;
+}
+
+.ho_stroke_10{
+    position: absolute;
+    height: var(--wl);
+    width: 20vw;
+    background-color: var(--white-trans);
+    top: 19.7em;
+    left: 9em;
+}
+
+.ho_stroke_11{
+    position: absolute;
+    height: var(--wl);
+    width: 37vw;
+    background-color: var(--white-trans);
+    top: 21.1em;
+    left: 8.5em;
+}
+
+.ho_stroke_12{
+    position: absolute;
+    height: var(--wl);
+    width: 37vw;
+    background-color: var(--white-trans);
+    top: 22.4em;
+    left: 8.5em;
+}
+
+.ho_stroke_13{
+    position: absolute;
+    height: var(--wl);
+    width: 30vw;
+    background-color: var(--white-trans);
+    top: 23.5em;
+    left: .5em;
+}
+
+.ho_stroke_14{
+    position: absolute;
+    height: var(--wl);
+    width: 8vw;
+    background-color: var(--white-trans);
+    top: 13.2em;
+    left: 32em;
+}
+
+.ho_stroke_15{
+    position: absolute;
+    height: var(--wl);
+    width: 22vw;
+    background-color: var(--white-trans);
+    top: 19em;
+    left: 25em;
+}
+
+.ho_stroke_16{
+    position: absolute;
+    height: var(--wl);
+    width: 22vw;
+    background-color: var(--white-trans);
+    top: 20.1em;
+    left: 25em;
+}
+/* --------------- horizontal stroke ---------------- */
+
+/* --------------- diagonal stroke ---------------- */
+.diag_stroke_1 {
+    position: absolute;
+    height: var(--wl);
+    width: 20em;
+    background-color: var(--white-trans);
+    transform: rotate(-24deg);
+    top: 6em;
+    left: -1em;
+}
+
+.diag_stroke_2 {
+    position: absolute;
+    height: var(--wl);
+    width: 20em;
+    background-color: var(--white-trans);
+    transform: rotate(24deg);
+    top: 6.5em;
+    left: 1em;
+}
+
+.diag_stroke_3 {
+    position: absolute;
+    height: var(--wl);
+    width: 20em;
+    background-color: var(--white-trans);
+    transform: rotate(-24deg);
+    top: 14em;
+    left: 1em;
+}
+
+.diag_stroke_4 {
+    position: absolute;
+    height: var(--wl);
+    width: 20em;
+    background-color: var(--white-trans);
+    transform: rotate(24deg);
+    top: 14.5em;
+    left: -1em;
+}
+
+.diag_stroke_5 {
+    position: absolute;
+    height: var(--wl);
+    width: 20em;
+    background-color: var(--white-trans);
+    transform: rotate(44.3deg);
+    top: 24.24em;
+    left: -2em;
+}
+
+.diag_stroke_6 {
+    position: absolute;
+    height: var(--wl);
+    width: 13em;
+    background-color: var(--white-trans);
+    transform: rotate(60.4deg);
+    top: 14em;
+    left: 17em;
+}
+.diag_stroke_7 {
+    position: absolute;
+    height: var(--wl);
+    width: 13em;
+    background-color: var(--white-trans);
+    transform: rotate(-60.4deg);
+    top: 14em;
+    left: 20.5em;
+}
+
+.diag_stroke_8 {
+    position: absolute;
+    height: var(--wl);
+    width: 13em;
+    background-color: var(--white-trans);
+    transform: rotate(-59deg);
+    top: 16em;
+    left: 32em;
+}
+/* --------------- diagonal stroke ---------------- */
+
+/* --------------- circle stroke ---------------- */
+.circle_stroke_1 {
+    width: 8em;
+    height: 8em;
+    border: var(--wl) solid var(--white-trans);
+    border-radius: 50%;
+    position: absolute;
+    top: 1.42em;
+    left: 2em;
+}
+
+.circle_stroke_2 {
+    width: calc( var(--Y-cir-ratio) * 2 );
+    height: calc( var(--Y-cir-ratio) * 2 );
+    border: var(--wl) solid var(--white-trans);
+    border-radius: 50%;
+    position: absolute;
+    top: 12.1em;
+    left: 33.4em;
+}
+/* --------------- circle stroke ---------------- */
+
+/* --------------- white stroke ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+:root {
+    --red:#F23545;
+    --dark-blue:#034C8C;
+    --blue:#05AFF2;
+    --green:#34BF57;
+    --yellow: #F2CB05;
+    --white-trans: rgba(255, 255, 255, 0.7);
+    --wl: .07em;
+    --common-size: 1.12em;
+    --common-size-V: 3.2em;
+    --Y-cir-ratio: 1.1em;
+
+  
+    --white: #fff;
+    --trans-dur: 0.3s;
+    font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+}
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100%;
+    background-color: var(--red);
+    background-color: var(--red);
+    color: var(--white);
+    font: 1em/1.5 sans-serif;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .recursion {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50em;
+    height: 50em;
+    transform: translate(-50%, -50%);
+  }
+  .recursion__letters {
+    animation-timing-function: cubic-bezier(0.29, 0.05, 0.76, 0.39);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  .recursion__letter--first {
+    animation-name: recursionA;
+    transform: translate(-50%, -50%) scale(9);
+  }
+  .recursion__letter--second {
+    animation-name: recursionB;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .recursion__letter--third {
+    animation-name: recursionC;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  .recursion__letter--fourth {
+    animation-name: recursionD;
+    transform: translate(-50%, -50%) scale(0.02);
+  }
+  .recursion__letter--fifth {
+    animation-name: recursionE;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+ 
+
+  
+.recursion_letter {
+    font-family: 'Kanit', sans-serif;
+    color: var(--white);
+    position: absolute; 
+    top: calc(50% - .72em);
+    left: calc(50% - 0.35em);
+    width: 100%;
+    height: 100%;
+}  
+ 
+  /* Animations */
+
+  @keyframes recursionA {
+    from {
+      transform: translate(-50%, -50%) scale(10);
+      visibility: visible;
+    }
+    50%, to {
+      transform: translate(-50%, -50%) scale(100);
+      visibility: hidden;
+    }
+  }
+  @keyframes recursionB {
+    from {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+      transform: translate(-50%, -50%) scale(10);
+    }
+  }
+  @keyframes recursionC {
+    from {
+      transform: translate(-50%, -50%) scale(0.1);
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  @keyframes recursionD {
+    from {
+      transform: translate(-50%, -50%) scale(0.01);
+    }
+    to {
+      transform: translate(-50%, -50%) scale(0.1);
+    }
+  }
+  @keyframes recursionE {
+    from {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    to {
+      transform: translate(-50%, -50%) scale(0.01);
+    }
+  }
+
+  
+
+  

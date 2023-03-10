@@ -1,0 +1,55 @@
+:root {
+    --red:#F23545;
+    --dark-blue:#034C8C;
+    --blue:#05AFF2;
+    --green:#34BF57;
+    --yellow: #F2CB05;
+    --white-trans: rgba(255, 255, 255, 0.7);
+    --wl: .07em;
+    --common-size: 1.12em;
+    --common-size-V: 3.2em;
+    --Y-cir-ratio: 1.1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+body { 
+    width: 100%;
+    background-color: var(--green);
+}
+
+.scene{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.strech{
+    height: 10em;
+    width: 10em;
+    border: 1.5em solid #fff;
+    border-radius: .5em;
+    background-color: var(--green);
+    transform: rotate(45deg);
+
+    position: relative;
+    transition-property: background-color, width, border-radius, transform ;
+    transition-duration: 500ms, 5s, 1s, 2s;
+
+}
+
+.strech:hover {
+    width: 100em;
+    background-color: #fff;
+    border-radius: 0;
+    transform: rotate(360deg);
+}
+
+
+
